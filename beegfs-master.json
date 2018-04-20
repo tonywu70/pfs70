@@ -93,7 +93,7 @@
 	  "RG_VNET": "[parameters('RG_VNET')]",
     "addressPrefix": "10.234.36.0/23",
     "subnetPrefix": "10.234.37.64/27",  
-    "virtualNetworkName": "VNET_EDA",
+    "virtualNetworkName": "Azure-GUC",
     "subnetName": "Subnet-Storage",
     "publicIPAddressName": "[concat(parameters('vmssName'), 'pip')]",
     "loadBalancerName": "[concat(parameters('vmssName'), 'lb')]",

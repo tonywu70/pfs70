@@ -156,7 +156,7 @@
       }
     },
     "VNETName": {
-      "type": "string",
+      "type": "string",  
       "defaultValue": "Azure-GUC",
       "metadata": {
         "description": "Name of the virtual network which master server is using."

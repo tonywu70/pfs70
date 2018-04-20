@@ -32,7 +32,7 @@
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "installParams": "[concat(variables('beeGFSNodeSettings').MasterName,' ', variables('beeGFSNodeSettings').nodeType,' ', variables('beeGFSNodeSettings').RAIDLevel)]",
-    "metadataDiskArray": [
+    "metadataDiskArray": [  
       {
         "diskSizeGB": "[variables('beeGFSNodeSettings').metadataDiskSize]",
         "lun": "0",

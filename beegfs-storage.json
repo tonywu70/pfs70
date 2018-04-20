@@ -27,7 +27,7 @@
     "beeGFSNodeSettings": "[parameters('beeGFSNodeSettings')]",
     "nodeOSSettings": "[parameters('nodeOSSettings')]",
     "sshKeyPath": "[concat('/home/',variables('nodeOSSettings').adminUserName,'/.ssh/authorized_keys')]",
-    "virtualNetworkName": "VNET_EDA",
+    "virtualNetworkName": "Azure_GUC",
     "subnetName": "Subnet-Storage",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",

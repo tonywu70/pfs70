@@ -1,8 +1,8 @@
 ## Deploy BeeGFS Master
-[![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FiMicrosoft%2Fguc-beegfs%2Fmaster%2Fbeegfs-master.json)  
+[![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftonywu70%2Fguc%2Fmaster%2Fbeegfs-master.json)  
 
 ## Deploy BeeGFS OSS, MDS and Client
-[![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FiMicrosoft%2Fguc-beegfs%2Fmaster%2Fdeploy-beegfs.json)  
+[![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftonywu70%2Fguc%2Fmaster%2Fdeploy-beegfs.json)  
 
 ## Deploy BeeGFS Master(HDD)
 [![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FiMicrosoft%2Fhtc_beegfs%2Fmaster%2Fbeegfs-master-hdd.json)  

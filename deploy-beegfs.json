@@ -157,7 +157,7 @@
     },
     "VNETName": {
       "type": "string",  
-      "defaultValue": "vmetest-vnet", 
+      "defaultValue": "vmtest-vnet", 
       "metadata": {
         "description": "Name of the virtual network which master server is using."
       }

@@ -75,9 +75,9 @@
     },
     "VMImage": {
       "type": "string",
-      "defaultValue": "CentOS_7.3",
+      "defaultValue": "CentOS_7.4",
       "allowedValues": [
-        "CentOS_7.3"
+        "CentOS_7.4"
       ],
       "metadata": {
         "description": "VM Image."
@@ -174,7 +174,7 @@
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "deploymentApiVersion": "2016-09-01",
-    "computeApiVersion": "2016-04-30-preview",
+    "computeApiVersion": "2017-03-30",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "location": "[resourceGroup().location]",
@@ -692,6 +692,7 @@
                 "name": "[variables('nicName')]",
                 "properties": {
                   "primary": "true",
+                  "enableAcceleratedNetworking": true,
                   "ipConfigurations": [
                     {
                       "name": "[variables('ipConfigName')]",
@@ -751,51 +752,6 @@
             ]
           }
         }
-      }
-    },
-    {
-      "type": "Microsoft.Insights/autoscaleSettings",
-      "apiVersion": "[variables('insightsApiVersion')]",
-      "name": "[concat(parameters('vmSSName'),'autoscalehostlast')]",
-      "location": "[variables('location')]",
-      "dependsOn": [
-        "[concat('Microsoft.Compute/virtualMachineScaleSets/',parameters('vmssName'),'last')]"
-      ],
-      "properties": {
-        "name": "[concat(parameters('vmSSName'),'autoscalehostlast')]",
-        "targetResourceUri": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/',  resourceGroup().name, '/providers/Microsoft.Compute/virtualMachineScaleSets/',parameters('vmssName'),'last')]",
-        "enabled": true,
-        "profiles": [
-          {
-            "name": "Profile2",
-            "capacity": {
-              "minimum": "1",
-              "maximum": "100",
-              "default": "1"
-            },
-            "rules": [
-              {
-                "metricTrigger": {
-                  "metricName": "Percentage CPU",
-                  "metricNamespace": "",
-                  "metricResourceUri": "[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/',  resourceGroup().name, '/providers/Microsoft.Compute/virtualMachineScaleSets/',parameters('vmssName'),'last')]",
-                  "timeGrain": "PT1M",
-                  "statistic": "Average",
-                  "timeWindow": "PT5M",
-                  "timeAggregation": "Average",
-                  "operator": "GreaterThan",
-                  "threshold": 60.0
-                },
-                "scaleAction": {
-                  "direction": "Increase",
-                  "type": "ChangeCount",
-                  "value": "1",
-                  "cooldown": "PT1M"
-                }
-              }
-            ]
-          }
-        ]
       }
     },
     {

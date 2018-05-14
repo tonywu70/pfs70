@@ -150,14 +150,14 @@
     },
     "RGvnetName": {
       "type": "string",    
-      "defaultValue": "EDA",
+      "defaultValue": "vmtest",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
     "VNETName": {
       "type": "string",  
-      "defaultValue": "Azure-GUC", 
+      "defaultValue": "vmetest-vnet", 
       "metadata": {
         "description": "Name of the virtual network which master server is using."
       }

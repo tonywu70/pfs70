@@ -19,7 +19,7 @@
     }
   },
   "variables": {
-    "RG_VNET": "vmtest",   
+    "RG_VNET": "EDA",   
     "networkApiVersion": "2016-06-01",
     "insightsApiVersion": "2015-04-01",
     "computeApiVersion": "2017-03-30",
@@ -27,8 +27,8 @@
     "beeGFSNodeSettings": "[parameters('beeGFSNodeSettings')]",
     "nodeOSSettings": "[parameters('nodeOSSettings')]",
     "sshKeyPath": "[concat('/home/',variables('nodeOSSettings').adminUserName,'/.ssh/authorized_keys')]",
-    "virtualNetworkName": "vmtest-vnet",
-    "subnetName": "default",
+    "virtualNetworkName": "Azure-GUC",
+    "subnetName": "Subnet-BEEGFS",
     "nicName": "[concat(parameters('vmssName'), 'nic')]",
     "ipConfigName": "[concat(parameters('vmssName'), 'ipconfig')]",
     "installParams": "[concat(variables('beeGFSNodeSettings').MasterName,' ', variables('beeGFSNodeSettings').nodeType,' ', variables('beeGFSNodeSettings').RAIDLevel)]",

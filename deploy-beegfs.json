@@ -150,16 +150,20 @@
     },
     "RGvnetName": {
       "type": "string",    
-      "defaultValue": "EDA",
       "metadata": {
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
     "VNETName": {
       "type": "string",  
-      "defaultValue": "Azure-GUC", 
       "metadata": {
         "description": "Name of the virtual network which master server is using."
+      }
+    },
+    "SubnetName": {
+      "type": "string",    
+      "metadata": {
+        "description": "Name of the subnet nodes belongs to."
       }
     },
     "masterName": {
@@ -201,7 +205,7 @@
     "beeGFSNodeSettings": {
       "vnetRG": "[parameters('RGvnetName')]",
       "vnetName": "[parameters('VNETName')]",
-      "subnetName": "Subnet-BEEGFS",
+      "subnetName": "[parameters('SubnetName')]",
       "MasterName": "[parameters('masterName')]",
       "nodeType": "[parameters('nodeType')]",
       "customDomain": "mydom",

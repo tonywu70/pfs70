@@ -110,7 +110,7 @@
     "StorageDisksCount": {
       "type": "int",
       "defaultValue": 1,
-      "minValue": 0,
+      "minValue": 2,
       "maxValue": 63,
       "metadata": {
         "description": "Number of storage disks"
@@ -131,7 +131,7 @@
     "MetaDisksCount": {
       "type": "int",
       "defaultValue": 1,
-      "minValue": 0,
+      "minValue": 2,
       "maxValue": 4,
       "metadata": {
         "description": "Number of metadate disks"

@@ -101,7 +101,9 @@
       "allowedValues": [
         "P10",
         "P20",
-        "P30"
+        "P30",
+        "P40",
+        "P50"
       ],
       "metadata": {
         "description": "Premium storage disk size used for the storage services"
@@ -110,7 +112,7 @@
     "StorageDisksCount": {
       "type": "int",
       "defaultValue": 1,
-      "minValue": 2,
+      "minValue": 0,
       "maxValue": 63,
       "metadata": {
         "description": "Number of storage disks"
@@ -131,7 +133,7 @@
     "MetaDisksCount": {
       "type": "int",
       "defaultValue": 1,
-      "minValue": 2,
+      "minValue": 0,
       "maxValue": 4,
       "metadata": {
         "description": "Number of metadate disks"

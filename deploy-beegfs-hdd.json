@@ -90,7 +90,13 @@
         "Standard_DS13_v2",
         "Standard_DS14_v2",
         "Standard_DS15_v2",
-        "Standard_F1",
+        "Standard_F2s_v2",
+        "Standard_F4s_v2",
+        "Standard_F8s_v2",
+        "Standard_F16s_v2",
+        "Standard_F32s_v2",
+        "Standard_F64s_v2",
+        "Standard_F72s_v2",
         "Standard_F2",
         "Standard_F4",
         "Standard_F8",
@@ -116,6 +122,18 @@
         "Standard_H16m",
         "Standard_H16r",
         "Standard_H16mr",
+        "Standard_NC6s_v2",
+        "Standard_NC12s_v2",
+        "Standard_NC24s_v2",
+        "Standard_NC24rs_v2",
+        "Standard_NC6s_v3",
+        "Standard_NC12s_v3",
+        "Standard_NC24s_v3",
+        "Standard_NC24rs_v3",
+        "Standard_ND6s",
+        "Standard_ND12s",
+        "Standard_ND24s",
+        "Standard_ND24rs",
         "Standard_L4s",
         "Standard_L8s",
         "Standard_L16s",
@@ -160,7 +178,9 @@
       "allowedValues": [
         "S10",
         "S20",
-        "S30"
+        "S30",
+        "S40",
+        "S50"
       ],
       "metadata": {
         "description": "Standard storage disk size used for the storage services"
@@ -237,6 +257,12 @@
       },
       "S30": {
         "size": 1023
+      },
+      "S40": {
+        "size": 2048
+      },
+      "S50": {
+        "size": 4095
       }
     },
     "RAIDMap": {

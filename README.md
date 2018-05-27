@@ -1,3 +1,5 @@
+## this template creates BeeGFS storage cluster based on latest version 7.0 supporting different storage pool with Accelerated networking enabled on nodes utiizing 7.4 kerenel and supported VM family model.
+
 ## Deploy BeeGFS Master
 [![Click to deploy template on Azure](http://azuredeploy.net/deploybutton.png "Click to deploy template on Azure")](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftonywu70%2Fpfs70%2Fmaster%2Fbeegfs-master.json)  
 

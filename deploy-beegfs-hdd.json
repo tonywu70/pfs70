@@ -233,6 +233,18 @@
         "description": "Name of the RG of the virtual network which master server is using."
       }
     },
+    "VNETName": {
+      "type": "string",  
+      "metadata": {
+        "description": "Name of the virtual network which master server is using."
+      }
+    },
+    "SubnetName": {
+      "type": "string",    
+      "metadata": {
+        "description": "Name of the subnet nodes belongs to."
+      }
+    },
     "masterName": {
       "type": "string",
       "metadata": {
